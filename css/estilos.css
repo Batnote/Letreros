@@ -150,7 +150,8 @@ body {
 .pos_menu {
     position: absolute;
     top: 50px;
-    left: 360px;
+    left: 18%;
+    /*left: 360px;*/
 }
 
 
