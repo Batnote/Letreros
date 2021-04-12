@@ -14,6 +14,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 .imagen_logo {
@@ -132,34 +133,39 @@ body {
 
 .boton {
     background-image: url(../images/boton.png);
-    background-size: 95%;
-    height: 50px;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center top;
-    bottom: 1000px;
+    background-position: center;
+    color: white !important;
 }
 
 .boton_ini {
     background-image: url(../images/boton_ini.png);
-    height: 50px;
     background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 43%;
+    background-position: center;
+    background-size: 100%;
+    color: transparent !important;
+}
+
+.boton_ini:hover {
+    color: transparent !important;
 }
 
 .pos_menu {
     position: absolute;
     top: 50px;
-    left: 360px;
+    left: 18%;
+    /*left: 360px;*/
 }
 
 
 /*Diseño Menu ----------------------------------------------------------------------------------------------------------------------------*/
 
-#text_menu {
+
+/*#text_menu {
     font-size: 24px;
     padding-top: 3px;
-}
+}*/
 
 #text_menu_opt {
     text-align: left;
@@ -188,9 +194,10 @@ body {
     background-color: #e7e7e7;
 }
 
-.bg-dark {
+
+/*.bg-dark {
     background-color: #000 !important;
-}
+}*/
 
 .fondo_opciones {
     background-image: url(../images/fondo_taller-06.png);
@@ -207,4 +214,34 @@ body {
 
 .container {
     margin: 150px auto;
+}
+
+.navbar-dark {
+    z-index: 9999;
+    background: transparent !important;
+    border: none !important;
+}
+
+.dropdown {
+    z-index: 9998;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.dropdown-menu {
+    background-color: transparent !important;
+    z-index: 9997;
+}
+
+.slides-control {}
+
+.navbar {
+    position: absolute;
+    left: 30%;
+}
+
+.slides-control {
+    position: absolute;
 }
