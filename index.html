@@ -8,11 +8,10 @@
     <title>Gonzalez Chong</title>
     <link rel="shortcut icon" href="images/extras/logo_blanco.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!------------->
     <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/carousel.js"></script>
     <link rel="stylesheet" href="css/superslides.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -21,54 +20,70 @@
     <div class="imagen_logo"><img src="images/logo_blanco.png" width="200"></div>
     <div class="imagen_logo_gris"><img src="images/logo_gris.png" width="300"></div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="pos_menu">
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <div class="boton_ini" id="text_menu"></div>
+                    </a>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto">
-
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link boton_ini" id="text_menu">INICIO</a>
                 </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle boton" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  &nbsp;&nbsp;&nbsp;EMPRESA&nbsp;&nbsp;&nbsp;
-                </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item boton" href="historia.html">HISTORIA</a>
-                        <a class="dropdown-item boton" href="infraestructura.html">INFRAESTRUCTURA</a>
-                    </div>
+                <li>
+                    <a href="#">
+                        <div class="boton" id="text_menu">EMPRESA</div>
+                    </a>
+                    <ul>
+                        <li><a href="historia.html"><button class="button button4">HISTORIA</button></a>
+                        </li>
+                        <li><a href="infraestructura.html"><button class="button button4">INFRAESTRUCTURA</button></a>
+                        </li>
+                    </ul>
                 </li>
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link boton" id="text_menu">&nbsp;&nbsp;PORTAFOLIO&nbsp;&nbsp;</a>
+                <li>
+                    <a href="portafolio.html">
+                        <div class="boton" id="text_menu">PORTAFOLIO</div>
+                    </a>
                 </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle boton" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  PRODUCTOS
-                </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item boton" href="caja_luz.html">CAJAS DE LUZ</a>
-                        <a class="dropdown-item boton" href="letreros_corp.html">LETREROS CORPÓREOS</a>
-                        <a class="dropdown-item boton" href="totems.html">TÓTEMS</a>
-                        <a class="dropdown-item boton" href="señaleticas.html">SEÑALÉTICAS</a>
-                    </div>
+                <li>
+                    <a href="#">
+                        <div class="boton" id="text_menu">PRODUCTOS</div>
+                    </a>
+                    <ul>
+                        <li><a href="caja_luz.html"><button class="button button4">CAJAS DE LUZ</button></a>
+                        </li>
+                        <li><a href="letreros_corp.html"><button class="button button4">LETREROS CORPÓREOS</button></a>
+                        </li>
+                        <li><a href="totems.html"><button class="button button4">TÓTEMS</button></a>
+                        </li>
+                        <li><a href="señaleticas.html"><button class="button button4">SEÑALÉTICAS</button></a>
+                        </li>
+                    </ul>
                 </li>
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link boton" id="text_menu">&nbsp;&nbsp;&nbsp;&nbsp;CONTACTO&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <li>
+                    <a href="#">
+                        <div class="boton" id="text_menu">CONTACTO</div>
+                    </a>
                 </li>
-
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $menu = $('#menu').find('ul').find('li');
 
+            $menu.hover(function() {
+                $(this).children('ul').stop();
+                $(this).children('ul').slideDown();
+            }, function() {
+                $(this).children('ul').stop();
+                $(this).children('ul').slideUp();
+            });
+        });
+    </script>
 
 
     <div id="slides">
@@ -122,14 +137,8 @@
 
     </div>
 
-    <!--<script src="js/carousel.js"></script>-->
     <script src="js/jquery.js"></script>
     <script src="js/jquery.superslides.js"></script>
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
 </body>
 

@@ -14,7 +14,6 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
 }
 
 .imagen_logo {
@@ -48,6 +47,38 @@ body {
     margin-left: 10%;
 }
 
+.background_contac_l {
+    position: absolute;
+    width: 500px;
+    height: 550px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    margin-top: 19%;
+    margin-left: 12%;
+}
+
+.background_contac_r {
+    position: absolute;
+    width: 500px;
+    height: 550px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    margin-top: 19%;
+    margin-left: 58%;
+}
+
+.parrafo_cont {
+    position: absolute;
+    color: #fff;
+    padding: 15px;
+}
+
+.mapa_con {
+    position: absolute;
+    margin-top: 139px;
+    margin-left: 10px;
+}
+
 .trans {
     opacity: 0.6;
 }
@@ -63,6 +94,15 @@ body {
 .text_cubo_historia {
     position: absolute;
     width: 645px;
+    padding-top: 8%;
+    padding-left: 10px;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.text_cubo_historia_2 {
+    position: absolute;
+    width: 1070px;
     padding-top: 8%;
     padding-left: 10px;
     color: #FFFFFF;
@@ -133,39 +173,34 @@ body {
 
 .boton {
     background-image: url(../images/boton.png);
-    background-size: 100%;
+    background-size: 95%;
+    height: 50px;
     background-repeat: no-repeat;
-    background-position: center;
-    color: white !important;
+    background-position: center top;
+    bottom: 1000px;
 }
 
 .boton_ini {
     background-image: url(../images/boton_ini.png);
+    height: 50px;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    color: transparent !important;
-}
-
-.boton_ini:hover {
-    color: transparent !important;
+    background-position: right top;
+    background-size: 43%;
 }
 
 .pos_menu {
     position: absolute;
     top: 50px;
-    left: 18%;
-    /*left: 360px;*/
+    left: 360px;
 }
 
 
 /*Diseño Menu ----------------------------------------------------------------------------------------------------------------------------*/
 
-
-/*#text_menu {
+#text_menu {
     font-size: 24px;
     padding-top: 3px;
-}*/
+}
 
 #text_menu_opt {
     text-align: left;
@@ -194,54 +229,255 @@ body {
     background-color: #e7e7e7;
 }
 
-
-/*.bg-dark {
+.bg-dark {
     background-color: #000 !important;
-}*/
+}
 
 .fondo_opciones {
     background-image: url(../images/fondo_taller-06.png);
     background-repeat: none;
 }
 
+
+/* Diseño formulario ----------------------------------------- */
+
+.formulario__label {
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+    color: #FFF;
+}
+
+.formulario__grupo-input {
+    position: relative;
+}
+
+.formulario__input {
+    width: 100%;
+    background: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+
+.formulario__input_text {
+    width: 100%;
+    background: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 100px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+
+.formulario__input_text:focus {
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+.formulario__input:focus {
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+.formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+    color: red;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+.formulario__validacion-estado {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formulario__checkbox {
+    margin-right: 10px;
+}
+
+.formulario__grupo-terminos,
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+    grid-column: span 2;
+}
+
+.formulario__mensaje {
+    height: 45px;
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+.formulario__mensaje-activo {
+    display: block;
+}
+
+.formulario__mensaje p {
+    margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario__btn {
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background: rgba(255, 255, 255, 0.6);
+    color: #000;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.formulario__mensaje-exito {
+    font-size: 14px;
+    color: #119200;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo {
+    display: block;
+}
+
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+    color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+    border: 3px solid #bb2929;
+}
+
+
+/* ----- -----  Mediaqueries ----- ----- */
+
+@media screen and (max-width: 800px) {
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+    .formulario__grupo-terminos,
+    .formulario__mensaje,
+    .formulario__grupo-btn-enviar {
+        grid-column: 1;
+    }
+    .formulario__btn {
+        width: 100%;
+    }
+}
+
+textarea {
+    margin: 12px;
+    padding: 8px;
+    width: 450px;
+    max-height: 150px;
+    max-width: 450px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* Diseño formulario ----------------------------------------- */
+
+.carousel-inner img {
+    width: 600px;
+    height: 300px;
+    left: 50px;
+}
+
+.carousel_por {
+    width: 1400px;
+    height: 500px;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+
+.backgrauncarusel {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 100px;
+    width: 600px;
+}
+
+.carousel-inner2 img {
+    width: 100px;
+    height: 200px;
+    left: 250px;
+}
+
+.jumbotron2 {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 500px;
+    padding: 10px;
+    margin-left: 500px;
+}
+
+.jumbotron4 {
+    margin-left: 150px;
+    padding: 20px;
+}
+
 .carousel,
 .slideshow {
-    width: 400px;
-    height: 300px;
-    margin-top: 4%;
-    margin-left: 62%;
+    width: 1370px;
+    height: 500px;
+    margin-top: 20%;
+    margin-left: 10%;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .container {
     margin: 150px auto;
 }
 
-.navbar-dark {
-    z-index: 9999;
-    background: transparent !important;
-    border: none !important;
+.carouse2 {
+    width: 400px;
+    height: 300px;
+    margin-top: 4%;
+    margin-left: 61%;
 }
 
-.dropdown {
-    z-index: 9998;
-}
-
-.nav-item {
-    margin-right: 20px;
-}
-
-.dropdown-menu {
-    background-color: transparent !important;
-    z-index: 9997;
-}
-
-.slides-control {}
-
-.navbar {
-    position: absolute;
-    left: 30%;
-}
-
-.slides-control {
-    position: absolute;
+.carousel1 {
+    width: 400px;
+    height: 300px;
+    margin-left: 61%;
+    margin-top: 43px;
+    background-color: rgba(0, 0, 0, 0.6);
 }
