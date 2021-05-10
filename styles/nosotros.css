@@ -1,0 +1,49 @@
+body {
+    background-color: #f77a06bb;
+}
+
+
+/*---NAVBAR---*/
+
+#div1 {
+    position: absolute;
+    height: 10%;
+    left: 5%;
+    width: 90%;
+    top: 0%;
+    background-color: #fafafa;
+    z-index: 9999;
+}
+
+nav .navbar-nav li a {
+    color: #ffa601 !important;
+}
+
+nav .navbar-nav li a:hover {
+    color: #ffa601 !important;
+}
+
+
+/*------------------------------------------------------*/
+
+#div2 {
+    position: absolute;
+    background-color: #e6e4e4;
+    height: 90%;
+    left: 5%;
+    width: 90%;
+    top: 10%;
+}
+
+#Titulo {
+    text-align: center;
+}
+
+.imgnosotros {
+    position: relative;
+    left: 40%;
+    height: 30%;
+}
+
+
+/*------------------------------------------------------*/

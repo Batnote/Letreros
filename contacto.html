@@ -5,17 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publicidad Gonzalez Chong</title>
-    <link rel="shortcut icon" href="images/logo_negro.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/carousel_historia"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Styles-->
+    <link rel="stylesheet" href="styles/superslides.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>LETREROS</title>
     <script>
         $(document).ready(function() {
             $menu = $('#menu').find('ul').find('li');
@@ -31,150 +27,138 @@
     </script>
 </head>
 
-<body class="fondo_opciones">
-
-    <div class="imagen_logo"><img src="images/logo_negro.png" width="200"></div>
-    <div class="imagen_logo_gris"><img src="images/logo_gris.png" width="300"></div>
-
-
-
-    <div class="pos_menu">
-        <nav id="menu">
-            <ul>
-                <li>
-                    <a href="index.html">
-                        <div class="boton_ini" id="text_menu"></div>
-                    </a>
-
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="boton" id="text_menu">EMPRESA</div>
-                    </a>
-                    <ul>
-                        <li><a href="historia.html"><button class="button button4">HISTORIA</button></a>
-                        </li>
-                        <li><a href="infraestructura.html"><button class="button button4">INFRAESTRUCTURA</button></a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="portafolio.html">
-                        <div class="boton" id="text_menu">PORTAFOLIO</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="boton" id="text_menu">PRODUCTOS</div>
-                    </a>
-                    <ul>
-                        <li><a href="caja_luz.html"><button class="button button4">CAJAS DE LUZ</button></a>
-                        </li>
-                        <li><a href="letreros_corp.html"><button class="button button4">LETREROS CORPÓREOS</button></a>
-                        </li>
-                        <li><a href="totems.html"><button class="button button4">TÓTEMS</button></a>
-                        </li>
-                        <li><a href="señaleticas.html"><button class="button button4">SEÑALÉTICAS</button></a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="contacto.html">
-                        <div class="boton" id="text_menu">CONTACTO</div>
-                    </a>
-                </li>
-            </ul>
+<body>
+    <!--!!!NAVBAR!!!-->
+    <div id="div1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light float-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <a href="index.html"><button class="btn btn-secondary" type="button" id="dropdownMenu2" aria-haspopup="true" aria-expanded="false">INICIO</button></a>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EMPRESA</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <a href="historia.html"><button class="btn dropdown-item" type="button">HISTORIA</button></a>
+                            <a href="infraestructura.html"><button class="btn dropdown-item" type="button">INFRAESTRUCTURA</button></a>
+                        </div>
+                    </div>
+                    <a href="portafolio.html"><button class="btn btn-secondary" type="button" id="dropdownMenu2" aria-haspopup="true" aria-expanded="false">PORTAFOLIO</button></a>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUCTOS</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <a href="caja_luz.html"><button class="btn dropdown-item" type="button">CAJAS DE LUZ</button></a>
+                            <a href="letreros_corp.html"><button class="btn dropdown-item" type="button">LETREROS CORPORÉOS</button></a>
+                            <a href="totems.html"><button class="btn dropdown-item" type="button">TÓTEMS</button></a>
+                            <a href="señaleticas.html"><button class="btn dropdown-item" type="button">SEÑALÉTICAS</button></a>
+                        </div>
+                    </div>
+                    <a href="contacto.html"><button class="btn btn-secondary" type="button" id="dropdownMenu2" aria-haspopup="true" aria-expanded="false">CONTACTO</button></a>
+                </ul>
+            </div>
         </nav>
     </div>
 
-    <div class="background_contac_r">
-        <div class="parrafo_cont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quisquam. Officiis aperiam harum dolorem, tenetur unde provident dolor deserunt, nostrum vitae nulla, qui voluptates natus quaerat distinctio quae autem? Provident.</div>
-        <div class="mapa_con">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6646.385960893849!2d-70.609507!3d-33.600297!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d76ff99434d5%3A0x9feb60f7551939d!2sDr%20Amador%20Neghme%203639%2C%20La%20Pintana%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1617901145193!5m2!1ses!2scl"
-                width="460" height="370" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div id="div2">
+        <div class="container-fluid"></div>
+        <div class="row">
+            <div class="col"><br><br></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 col-sm-12 m-2">
+                <div class="div_c_l p-2">
+                    <form action="mail.php" class="was-validated" method="post">
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" id="uname" placeholder="Ingresa tu nombre" name="uname" required>
+
+                            <div class="invalid-feedback">Rellena este campo</div>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="optradio" checked>Empresa 
+                                </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="optradio">Particular
+                                </label>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <br>
+                            <label for="sel1">Servicio</label>
+                            <select class="form-control" id="sel1" name="sel1">
+                                    <option>Seleccione</option>
+                                    <option>Letreros Corporativos</option>
+                                    <option>Router CNC y Láser</option>
+                                    <option>Estructuras Metálicas</option>
+                                    <option>Remodelación</option>
+                                </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="email" name="correo" class="form-control" id="inputCorreo" placeholder="ingrese su correo" required="">
+
+
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Su mensaje:</label>
+                            <textarea class="form-control" rows="5" id="comment" name="comment" required></textarea>
+
+                            <div class="invalid-feedback">Rellena este campo</div>
+                        </div>
+                        <input type="submit" class="btn-primary btn_1"></input>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-5 col-sm-12 ">
+                <div class="div_c_r m-2">
+                    <p style="padding-top: 10px;padding:10px">Visitándonos en nuestra dirección en Núcleo Industrial – Santiago Sur - Dr. Amador Neghme N°03639, Modulo 3, La Pintana.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6646.385960893849!2d-70.609507!3d-33.600297!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d76ff99434d5%3A0x9feb60f7551939d!2sDr%20Amador%20Neghme%203639%2C%20La%20Pintana%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1617901145193!5m2!1ses!2scl"
+                        style="height: 430px;width: 100%;padding: 20px; border: none;" allowfullscreen="" loading="lazy"></iframe>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div class="row redes_fondo">
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-2 col-sm-12 wsp_fondo">
+                <a href="https://api.whatsapp.com/send?phone=56979542409" target="_blank"><img src="images/whatsapp-logo-3-1.png" alt="" class="wsp"></a>
+
+            </div>
+            <div class="col-md-2 col-sm-12 insta_fondo">
+                <a href="https://www.instagram.com/k._.1000._.o/?hl=es-la" target="_blank"><img src="images/instagram.png" alt="" class="wsp"></a>
+
+            </div>
+            <div class="col-md-2 col-sm-12 face_fondo">
+                <a href="https://web.facebook.com/camilitho.cruzado/" target="_blank"><img src="images/facebook.png" alt="" class="wsp"></a>
+
+            </div>
+            <div class="col-md-1">
+            </div>
         </div>
     </div>
-    <div class="background_contac_l">
-        <form action="" class="formulario" id="formulario">
 
-
-            <!-- Grupo: Nombre -->
-            <div class="formulario__grupo" id="grupo__nombre">
-                <label for="nombre" class="formulario__label"></label>
-                <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
-            </div>
-
-            <!-- Grupo: tipo -->
-            <div class="formulario__grupo" id="grupo__nombre">
-                <label for="nombre" class="formulario__label"></label>
-                <div class="formulario__grupo-input">
-                    <select name="tipo_contacto" id="tipo_contac" class="formulario__input">
-            <option value>Seleccione Tipo...</option>
-            <option value="Empresa">Empresa</option>
-            <option value="Particular">Particular</option>
-        </select>
-
-                </div>
-            </div>
-
-            <!-- Grupo: servicio -->
-            <div class="formulario__grupo" id="grupo__nombre">
-                <label for="nombre" class="formulario__label"></label>
-                <div class="formulario__grupo-input">
-                    <select name="tipo_servicio" id="tipo_servi" class="formulario__input">
-            <option value>Seleccione Servicio...</option>
-            <option value="Letreros Corporativos">Letreros Corporativos</option>
-            <option value="Router CNC y Láser">Router CNC y Láser</option>
-            <option value="Estructuras Metálicas">Estructuras Metálicas</option>
-            <option value="Remodelación">Remodelación</option>
-        </select>
-
-                </div>
-            </div>
-
-
-            <!-- Grupo: Correo Electronico -->
-            <div class="formulario__grupo" id="grupo__correo">
-                <label for="correo" class="formulario__label"></label>
-                <div class="formulario__grupo-input">
-                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
-            </div>
-
-            <div class="formulario__grupo" id="grupo__nombre">
-                <label for="nombre" class="formulario__label"></label>
-                <div class="formulario__grupo-input">
-                    <textarea placeholder="Mensaje" name="msg" cols="1" rows="1" class="formulario__input_text"></textarea>
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
-            </div>
-
-
-
-            <div class="formulario__grupo formulario__grupo-btn-enviar">
-                <button type="submit" class="formulario__btn">Enviar</button>
-                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
-            </div>
-            <div class="formulario__mensaje" id="formulario__mensaje">
-                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
-            </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.superslides.js"></script>
 
     </div>
-    </form>
+    </div>
 
 
 
-    <script src="js/formulario.js"></script>
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,154 @@
+body {
+    background-image: url(../images/fondo_taller-06.png);
+    background-position: center center;
+}
+
+
+/*---NAVBAR---*/
+
+#div1 {
+    position: absolute;
+    height: 10%;
+    left: 5%;
+    width: 90%;
+    top: 0%;
+    background-color: #000000ad;
+    z-index: 9999;
+}
+
+.navbar {
+    color: #000000b2;
+    background-color: transparent !important;
+}
+
+nav .navbar-nav li a {
+    color: #000000 !important;
+}
+
+nav .navbar-nav li a:hover {
+    color: #000000 !important;
+}
+
+.btn {
+    background-color: transparent !important;
+    border: none;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white !important;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.dropdown-menu {
+    background-color: #000000ad;
+    border: none;
+}
+
+
+/*------------------------------------------------------*/
+
+
+/*---CAROSUEL---*/
+
+#div2 {
+    position: absolute;
+    background-color: #000000;
+    height: 90%;
+    left: 5%;
+    width: 90%;
+    top: 10%;
+}
+
+.carousel,
+.carousel-inner {
+    height: 90vh;
+}
+
+.descripcion_titulo {
+    padding: 13px;
+}
+
+.descripcion_texto {
+    padding: 13px;
+}
+
+.texto_carru {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 90%;
+}
+
+#Titulo {
+    color: #fff;
+    padding: 13px;
+}
+
+.texto {
+    color: #fff;
+    padding: 13px;
+}
+
+
+/*----------------INFRAESTRUCTURA-------------------------*/
+
+#div3 {
+    position: absolute;
+    background-color: #000000;
+    height: 90%;
+    left: 5%;
+    width: 90%;
+    top: 10%;
+}
+
+.div_c_l {
+    background-color: rgba(255, 255, 255, 0.705);
+}
+
+.div_c_r {
+    background-color: rgba(255, 255, 255, 0.705);
+}
+
+.btn_1 {
+    background-color: rgba(129, 129, 129, 0.5);
+    border: none;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white !important;
+    width: 100%;
+}
+
+.redes_fondo {
+    margin-top: 25px;
+}
+
+.wsp {
+    width: 40px;
+    height: 40px;
+}
+
+.wsp_fondo {
+    background-color: rgba(72, 255, 0, 0.5);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.insta_fondo {
+    background-color: rgba(255, 0, 212, 0.5);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.face_fondo {
+    background-color: rgba(0, 17, 255, 0.5);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

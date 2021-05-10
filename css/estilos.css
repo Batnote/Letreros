@@ -14,7 +14,6 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
 }
 
 .imagen_logo {
@@ -192,7 +191,7 @@ body {
 .pos_menu {
     position: absolute;
     top: 50px;
-    left: 18%;
+    left: 360px;
 }
 
 
