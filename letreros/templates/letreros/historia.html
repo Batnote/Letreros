@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="{% static 'letreros/css/bootstrap.css' %}">
+    <!--Styles-->
+    <link rel="stylesheet" href="{% static 'letreros/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'letreros/css/jshowoff.css' %}">
+    <!--Js-->
+    <link rel="stylesheet" href="{% static 'letreros/js/carousel_historia.js' %}">
+    <link rel="stylesheet" href="{% static 'letreros/js/carousel.js' %}">
+    <link rel="stylesheet" href="{% static 'letreros/js/formulario.js' %}">
+    <link rel="stylesheet" href="{% static 'letreros/js/jquery.jshowoff.js' %}">
+    <link rel="stylesheet" href="{% static 'letreros/js/jquery.jshowoff.min.js' %}">
+    <link rel="stylesheet" href="{% static 'letreros/js/jquery.superslides.js' %}">
+    <link rel="stylesheet" href="{% static 'letreros/js/swiper.js' %}">
+    <link rel="stylesheet" href="{% static 'letreros/js/bootstrap.js' %}">
+    <title>LETREROS</title>
+</head>
+
+<body>
+    <div id="div1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light float-left">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    {% if request.user.is_authenticated and user.username == "admin" %}
+                    <a href="{% url 'contactoslist' %}"><button class="btn btn-secondary algo" type="button" id="dropdownMenu2" aria-haspopup="true" aria-expanded="false">Contactos</button></a>
+                    <a href="{% url 'consumirapi' %}"><button class="btn btn-secondary algo" type="button" id="dropdownMenu2" aria-haspopup="true" aria-expanded="false">API</button></a> {% endif %}
+                    <a href="{% url 'inicio' %}"><button class="btn btn-secondary algo" type="button" id="dropdownMenu2" aria-haspopup="true" aria-expanded="false">INICIO</button></a>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle algo" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EMPRESA</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <a href="{% url 'historia' %}"><button class="btn dropdown-item algo" type="button">HISTORIA</button></a>
+                            <a href="{% url 'infraestructura' %}"><button class="btn dropdown-item  algo" type="button">INFRAESTRUCTURA</button></a>
+                        </div>
+                    </div>
+                    <a href="{% url 'portafolio' %}"><button class="btn btn-secondary algo" type="button" id="dropdownMenu2" aria-haspopup="true" aria-expanded="false">PORTAFOLIO</button></a>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle algo" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUCTOS</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <a href="{% url 'caja_luz' %}"><button class="btn dropdown-item algo" type="button">CAJAS DE LUZ</button></a>
+                            <a href="{% url 'letreros_corp' %}"><button class="btn dropdown-item algo" type="button">LETREROS CORPORÉOS</button></a>
+                            <a href="{% url 'totems' %}"><button class="btn dropdown-item algo" type="button">TÓTEMS</button></a>
+                            <a href="{% url 'señaleticas' %}"><button class="btn dropdown-item algo" type="button">SEÑALÉTICAS</button></a>
+                        </div>
+                    </div>
+                    <a href="{% url 'contacto' %}"><button class="btn btn-secondary algo" type="button" id="dropdownMenu2" aria-haspopup="true" aria-expanded="false">CONTACTO</button></a> {% if request.user.is_authenticated %}
+                    <a href="{% url 'LogoutView' %}"><button class="btn btn-secondary algo" type="button" id="dropdownMenu2" aria-haspopup="true" aria-expanded="false">Logout</button></a>
+                    <span class="badge red z-depth-1 mr-1"> {{ user }} </span>{% else %}
+                    <a href="{% url 'login' %}"><button class="btn btn-secondary algo" type="button" id="dropdownMenu2" aria-haspopup="true" aria-expanded="false">LOGIN</button></a> {% endif %}
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="div2">
+        <h1 id="Titulo">NOSOTROS</h1>
+        <br>
+        <br>
+        <p class="texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, pariatur illum! Fugit ducimus veritatis veniam autem eius eos qui impedit ipsum cum. Atque dolores animi doloribus, molestiae quisquam provident ipsa. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Possimus dolorem voluptatum facere laborum distinctio dolor, laudantium mollitia reiciendis minus iusto. Soluta id corporis, officiis repellat beatae maiores cum reprehenderit amet. Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Nobis doloribus tempora rerum corporis provident qui tenetur ab aut quas fuga reiciendis magnam ad, laboriosam deleniti necessitatibus voluptate quae, illo eaque!
+        </p>
+        <br>
+        <br>
+        <p class="texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ex! Assumenda fuga, a, saepe quos hic, atque pariatur esse cupiditate nihil dolor voluptas temporibus molestiae modi facere id deserunt ipsa. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Nam quae quisquam ipsa iure voluptas porro a rerum veritatis hic animi sit blanditiis recusandae molestiae, optio quod, tenetur enim cumque quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est porro voluptates magni dolorum
+            facere vero ullam? Iure esse neque earum ut fuga doloremque, voluptas accusantium sunt, corrupti ex, dolores quam?
+        </p>
+        <br>
+        <br>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
